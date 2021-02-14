@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>how to make your hexo</title>
+      <link href="2021/02/12/how-to-make-your-hexo/"/>
+      <url>2021/02/12/how-to-make-your-hexo/</url>
+      
+        <content type="html"><![CDATA[<ol><li><p>创建your_name.github.io 的repo</p></li><li><p><a href="https://www.jianshu.com/p/7dcd97c8e0e3">配置ssh</a></p></li><li><p><a href="https://www.jianshu.com/p/77665a8d56a9">安装Hexo并部署</a></p><ul><li><p>新建blog文件夹并进入，打开Git Bash输入npm install -g hexo-cli安装Hexo</p></li><li><p>hexo init <new_folder> 会新建并初始化一个文件夹；cd  new_folder  &amp;&amp; npm install</p></li><li><p>npm install hexo-deployer-git –save</p></li><li><p>_config.yml添加以下内容：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: <span class="string">&#x27;https://github.com/PokerMan86/pokerman86.github.io.git&#x27;</span></span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></li><li><p><code>hexo clean   &amp;&amp;  hexo g &amp;&amp; hexo d</code></p></li></ul></li><li><p><a href="https://www.jianshu.com/p/f2cce945be5f">更换主题方法</a></p></li><li><p><a href="https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md">主题推荐</a></p><ul><li>安装module时，如果报依赖错误，可以加上–no-audit   <code>npm i hexo-permalink-pinyin --save --no-audit</code></li></ul></li><li><p>撰写博客</p><ul><li><code>hexo n &quot;name&quot;</code> , 生成name.md文件 ,安装markdown格式写就行了</li></ul></li><li><p>博客插入图片：</p><ul><li><p>npm i -s hexo-asset-link   <a href="https://www.npmjs.com/package/hexo-asset-link">hexo-asset-link - npm (npmjs.com)</a>  img src会指向相对于public的相对路径，也会在html同路径生成图片</p></li><li><p>post_asset_folder: true   新建博客时会自动生成同名文件夹</p></li><li><p>** 保证public中生成的html文件中image的src是指向了html相对路径，并且html同路径生成了同样的图片路径。若没有生成图片路径，则需要自己手动拷贝Make-Your-Own-Hexo.assets文件夹到html同路径。</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;Make-Your-Own-Hexo.assets/ChMkKmAd-R-IGbg9AAmT2xHAEmcAAJfgwPApwUACZPz463.jpg&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span><br></pre></td></tr></table></figure></li></ul></li><li><p>npm list 查看所有安装的module，npm uninstall module-name 卸载</p></li><li><p>hexo clean会删除public文件夹，如果更新了旧文章，必须clean；添加新文章不用clean</p></li><li><p>注意：博客名称不能有大写字母，解析网址时无法区分大小写。</p></li><li><p>github.io部署后，过一段时间就打不开了，404.解决办法：github repo settings,修改为==Branch: master  / (root) Save==</p><p><a href="https://pages.github.com/">GitHub Pages</a> is designed to host your personal, organization, or project pages from a GitHub repository.</p><p>Your site is ready to be published at <a href="https://pokerman-yx.github.io/">https://pokerman-yx.github.io/</a>.</p><p><strong>Source</strong></p><p>Your GitHub Pages site is currently being built from the <code>master</code> branch. <a href="https://docs.github.com/articles/configuring-a-publishing-source-for-github-pages/">Learn more</a>.</p><p>==Branch: master  / (root) Save==</p><p><img src="how-to-make-your-hexo.assets/ChMkKmAd-R-IGbg9AAmT2xHAEmcAAJfgwPApwUACZPz463.jpg" alt="test image" title="试试"></p></li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Hello World ! </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Personal Tax</title>
+      <link href="2021/02/12/personaltax/"/>
+      <url>2021/02/12/personaltax/</url>
+      
+        <content type="html"><![CDATA[<h3 id="1-个人所得税扣税规则"><a href="#1-个人所得税扣税规则" class="headerlink" title="1.  个人所得税扣税规则"></a>1.  个人所得税扣税规则</h3><ol><li>月收入 - 职工五险一金- 5000元 -  专项扣除额度后剩余的钱交税</li><li>先按照月收入每个月预扣，最终下一年3月1日-6月30日，自行在个税APP<strong>综合所得年度汇算</strong>，多退少补。</li><li>专项扣除要在上一年12月31日前在个税APP上提前填写专项扣除申请，当年按月收入每月预交税时，才能扣除专项额度；否则，每月预缴税要多扣钱，到下一年3-6月<strong>综合所得年度汇算</strong>时，再退税。</li><li>多份收入，可以使用不同人的银行卡，进行合理避税，因为每人都有60000元免税额度。</li><li>个人专项扣除明细申报信息不得造假，可能会上征信黑名单，影响个人。</li><li>专项扣除免税额度每增加1000元，大约少交100元税。</li><li>2021年最新规定，不按月度每月均匀预扣税，而是等年收入超过应纳税额时，再进行扣税，意味着前几个月一分钱税不用预交，但是后面每个月要交更多税，这样年度交税总额不变，为了让老百姓每年前几个月手上多一点现钱。</li></ol><h3 id="2-个人所得税专项扣除额度"><a href="#2-个人所得税专项扣除额度" class="headerlink" title="2. 个人所得税专项扣除额度"></a>2. 个人所得税专项扣除额度</h3><p>==操作方法：个税APP，首页-&gt;专项附加扣除填报-&gt;选择扣除年度-&gt;填写满足要求的每项信息==</p><ol><li><p>子女教育</p><ul><li>0–3岁，不增加免税额度</li><li>3岁–博士研究生，每个子女每月增加1000免税额度</li><li>（父母只能由一个人享受免税额度，或者两人各享受50%,每个纳税年度内不能变更）</li></ul></li><li><p>继续教育</p><ul><li>纳税人接受学历教育（成人高考等），在读期间每月增加400免税额度；同一学历（学位）继续教育的扣除期限不能超过48个月。</li><li>纳税人考职业资格证，在取得相关证书的当年，按照3600元定额增加免税额度。</li></ul></li><li><p>大病医疗</p><ul><li>纳税人发生的与基本医保相关的医药费用支出，扣除医保报销后个人负担（指医保目录范围内的自付部分）累计超过15000元的部分，由纳税人在办理年度汇算清缴时，在80000元限额内据实扣除。</li><li>(以家庭为单位，未成年子女发生的医疗费用，满足上述条件，可由父母其中一人享受免税额度)</li></ul></li><li><p>住房贷款利息</p><ul><li>家庭首套房，在支付房贷期间，每月可享受1000免税额度，最长时间不超过240个月，由夫妻双方其中一人享受，每个纳税年度内不能变更。</li></ul></li><li><p>住房租金</p><ul><li>纳税人在主要工作城市没有自有住房而发生的住房租金支出，可以按照以下标准定额扣除：<ul><li>直辖市、省会（首府）城市、计划单列市以及国务院确定的其他城市，扣除标准为每月1500元；</li><li>除第一项所列城市以外，市辖区户籍人口超过100万的城市，扣除标准为每月1100元；市辖区户籍人口不超过100万的城市，扣除标准为每月800元。</li><li>纳税人的配偶在纳税人的主要工作城市有自有住房的，视同纳税人在主要工作城市有自有住房。</li></ul></li><li>夫妻双方主要工作城市相同的，只能由一方扣除住房租金支出。</li><li>纳税人及其配偶在一个纳税年度内不能同时分别享受住房贷款利息和住房租金专项附加扣除。</li></ul></li><li><p>赡养老人</p><ul><li>赡养一位及以上60岁父母，纳税人为独生子女的，按照每月2000元的免税额度；非独生子女，兄弟姐妹分摊，每人不超过1000元，每个纳税年度内不能变更。</li></ul></li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Personal Tax </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Social Security Knowledge</title>
+      <link href="2021/02/12/social-security-knowledge/"/>
+      <url>2021/02/12/social-security-knowledge/</url>
+      
+        <content type="html"><![CDATA[<h1 id="社保知识扫盲"><a href="#社保知识扫盲" class="headerlink" title="社保知识扫盲"></a>社保知识扫盲</h1><p>以上海为例：</p><p><img src="social-security-knowledge.assets/image-20200806205104758.png" alt="image-20200806205104758"></p><h2 id="1-养老保险："><a href="#1-养老保险：" class="headerlink" title="1. 养老保险："></a>1. 养老保险：</h2><p>分为个人账户和社会统筹账户，个人账户金额=个人缴纳部分，累计计算利息。退休后，用其个人账户全部储存额除以计发月数（50岁为195、55岁为170、60岁为139，不再统一是120了）即是该职工退休当月的个人账户养老金。10几年后个人账户的钱花完了，才会花社会统筹账户。（单位缴纳的金额全部计入社会统筹账户）</p><h2 id="2-医疗保险："><a href="#2-医疗保险：" class="headerlink" title="2. 医疗保险："></a>2. 医疗保险：</h2><p>分为个人账户和社会统筹账户，个人账户金额=个人缴纳部分+固定金额（根据年龄划分，如210元/年）。每年4月个人一次性缴纳一年的个人缴纳部分，次年6月进行清算，多退少补。报销细节如下：[<a href="http://ybj.sh.gov.cn/xxcxqbxx/index.html?id=7%5D">http://ybj.sh.gov.cn/xxcxqbxx/index.html?id=7]</a> 。注意个人账户金额可以跨年累计。</p><p><img src="social-security-knowledge.assets/image-20200806205843488.png" alt="image-20200806205843488"></p><h2 id="3-公积金"><a href="#3-公积金" class="headerlink" title="3. 公积金"></a>3. 公积金</h2><p>买房用、租房用、离开一个城市可以一次性取出等等。</p><h2 id="4-失业保险"><a href="#4-失业保险" class="headerlink" title="4.  失业保险"></a>4.  失业保险</h2><p>被迫下岗，每个月可以领1800+</p><h2 id="5-生育保险"><a href="#5-生育保险" class="headerlink" title="5. 生育保险"></a>5. 生育保险</h2><p>生育相关的各种费用+产假津贴（津贴为单位平均工资），即休产假时的工资由生育基金支付，单位不支付工资。妻子没有工作，可以享受丈夫的生育保险，但生育相关的费用要少。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Social Security </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
