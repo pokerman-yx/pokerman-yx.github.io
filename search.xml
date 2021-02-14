@@ -8,32 +8,13 @@
       <link href="2021/02/12/how-to-make-your-hexo/"/>
       <url>2021/02/12/how-to-make-your-hexo/</url>
       
-        <content type="html"><![CDATA[<ol><li><p>创建your_name.github.io 的repo</p></li><li><p><a href="https://www.jianshu.com/p/7dcd97c8e0e3">配置ssh</a></p></li><li><p><a href="https://www.jianshu.com/p/77665a8d56a9">安装Hexo并部署</a></p><ul><li><p>新建blog文件夹并进入，打开Git Bash输入npm install -g hexo-cli安装Hexo</p></li><li><p>hexo init <new_folder> 会新建并初始化一个文件夹；cd  new_folder  &amp;&amp; npm install</p></li><li><p>npm install hexo-deployer-git –save</p></li><li><p>_config.yml添加以下内容：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: <span class="string">&#x27;https://github.com/PokerMan86/pokerman86.github.io.git&#x27;</span></span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></li><li><p><code>hexo clean   &amp;&amp;  hexo g &amp;&amp; hexo d</code></p></li></ul></li><li><p><a href="https://www.jianshu.com/p/f2cce945be5f">更换主题方法</a></p></li><li><p><a href="https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md">主题推荐</a></p><ul><li>安装module时，如果报依赖错误，可以加上–no-audit   <code>npm i hexo-permalink-pinyin --save --no-audit</code></li></ul></li><li><p>撰写博客</p><ul><li><code>hexo n &quot;name&quot;</code> , 生成name.md文件 ,安装markdown格式写就行了</li></ul></li><li><p>博客插入图片：</p><ul><li><p>npm i -s hexo-asset-link   <a href="https://www.npmjs.com/package/hexo-asset-link">hexo-asset-link - npm (npmjs.com)</a>  img src会指向相对于public的相对路径，也会在html同路径生成图片</p></li><li><p>post_asset_folder: true   新建博客时会自动生成同名文件夹</p></li><li><p>** 保证public中生成的html文件中image的src是指向了html相对路径，并且html同路径生成了同样的图片路径。若没有生成图片路径，则需要自己手动拷贝Make-Your-Own-Hexo.assets文件夹到html同路径。</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;Make-Your-Own-Hexo.assets/ChMkKmAd-R-IGbg9AAmT2xHAEmcAAJfgwPApwUACZPz463.jpg&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span><br></pre></td></tr></table></figure></li></ul></li><li><p>npm list 查看所有安装的module，npm uninstall module-name 卸载</p></li><li><p>hexo clean会删除public文件夹，如果更新了旧文章，必须clean；添加新文章不用clean</p></li><li><p>注意：博客名称不能有大写字母，解析网址时无法区分大小写。</p></li><li><p>github.io部署后，过一段时间就404打不开了。解决办法：github repo settings中的github pages修改为==Branch: master  / (root) Save==</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">[GitHub Pages](https://pages.github.com/) is designed to host your personal, organization, or project pages from a GitHub repository.</span><br><span class="line">    </span><br><span class="line">Your site is ready to be published at https://pokerman-yx.github.io/.</span><br><span class="line">    </span><br><span class="line">**Source**</span><br><span class="line">    </span><br><span class="line">Your GitHub Pages site is currently being built from the `master` branch. [Learn more](https://docs.github.com/articles/configuring-a-publishing-source-for-github-pages/).</span><br><span class="line">    </span><br><span class="line">==Branch: master  / (root) Save==</span><br></pre></td></tr></table></figure><p><img src="how-to-make-your-hexo.assets/ChMkKmAd-R-IGbg9AAmT2xHAEmcAAJfgwPApwUACZPz463.jpg" alt="test image" title="试试"></p></li></ol>]]></content>
+        <content type="html"><![CDATA[<ol><li><p>创建your_name.github.io 的repo</p></li><li><p><a href="https://www.jianshu.com/p/7dcd97c8e0e3">配置ssh</a></p></li><li><p><a href="https://www.jianshu.com/p/77665a8d56a9">安装Hexo并部署</a></p><ul><li><p>新建blog文件夹并进入，打开Git Bash输入npm install -g hexo-cli安装Hexo</p></li><li><p>hexo init <new_folder> 会新建并初始化一个文件夹；cd  new_folder  &amp;&amp; npm install</p></li><li><p>npm install hexo-deployer-git –save</p></li><li><p>_config.yml添加以下内容：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: <span class="string">&#x27;https://github.com/PokerMan86/pokerman86.github.io.git&#x27;</span></span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></li><li><p><code>hexo clean   &amp;&amp;  hexo g &amp;&amp; hexo d</code></p></li></ul></li><li><p><a href="https://www.jianshu.com/p/f2cce945be5f">更换主题方法</a></p></li><li><p><a href="https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md">主题推荐</a></p><ul><li>安装module时，如果报依赖错误，可以加上–no-audit   <code>npm i hexo-permalink-pinyin --save --no-audit</code></li></ul></li><li><p>撰写博客</p><ul><li><code>hexo n &quot;name&quot;</code> , 生成name.md文件 ,安装markdown格式写就行了</li></ul></li><li><p>博客插入图片：</p><ul><li><p>npm i -s hexo-asset-link   <a href="https://www.npmjs.com/package/hexo-asset-link">hexo-asset-link - npm (npmjs.com)</a>  img src会指向相对于public的相对路径，也会在html同路径生成图片</p></li><li><p>post_asset_folder: true   新建博客时会自动生成同名文件夹</p></li><li><p>** 保证public中生成的html文件中image的src是指向了html相对路径，并且html同路径生成了同样的图片路径。若没有生成图片路径，则需要自己手动拷贝Make-Your-Own-Hexo.assets文件夹到html同路径。</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;Make-Your-Own-Hexo.assets/ChMkKmAd-R-IGbg9AAmT2xHAEmcAAJfgwPApwUACZPz463.jpg&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span><br></pre></td></tr></table></figure></li></ul></li><li><p>npm list 查看所有安装的module，npm uninstall module-name 卸载</p></li><li><p>hexo clean会删除public文件夹，如果更新了旧文章，必须clean；添加新文章不用clean</p></li><li><p>注意：博客名称不能有大写字母，解析网址时无法区分大小写。</p></li><li><p>github.io部署后，过一段时间就404打不开了。解决办法：github repo settings中的github pages修改为==Branch: master  / (root) Save</p></li></ol><p>  <img src="how-to-make-your-hexo.assets/ChMkKmAd-R-IGbg9AAmT2xHAEmcAAJfgwPApwUACZPz463.jpg" alt="test image"></p>]]></content>
       
       
       
         <tags>
             
             <tag> Hello World ! </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Social Security Knowledge</title>
-      <link href="2021/02/12/social-security-knowledge/"/>
-      <url>2021/02/12/social-security-knowledge/</url>
-      
-        <content type="html"><![CDATA[<h1 id="社保知识扫盲"><a href="#社保知识扫盲" class="headerlink" title="社保知识扫盲"></a>社保知识扫盲</h1><p>以上海为例：</p><p><img src="social-security-knowledge.assets/image-20200806205104758.png" alt="image-20200806205104758"></p><h2 id="1-养老保险："><a href="#1-养老保险：" class="headerlink" title="1. 养老保险："></a>1. 养老保险：</h2><p>分为个人账户和社会统筹账户，个人账户金额=个人缴纳部分，累计计算利息。退休后，用其个人账户全部储存额除以计发月数（50岁为195、55岁为170、60岁为139，不再统一是120了）即是该职工退休当月的个人账户养老金。10几年后个人账户的钱花完了，才会花社会统筹账户。（单位缴纳的金额全部计入社会统筹账户）</p><h2 id="2-医疗保险："><a href="#2-医疗保险：" class="headerlink" title="2. 医疗保险："></a>2. 医疗保险：</h2><p>分为个人账户和社会统筹账户，个人账户金额=个人缴纳部分+固定金额（根据年龄划分，如210元/年）。每年4月个人一次性缴纳一年的个人缴纳部分，次年6月进行清算，多退少补。报销细节如下：[<a href="http://ybj.sh.gov.cn/xxcxqbxx/index.html?id=7%5D">http://ybj.sh.gov.cn/xxcxqbxx/index.html?id=7]</a> 。注意个人账户金额可以跨年累计。</p><p><img src="social-security-knowledge.assets/image-20200806205843488.png" alt="image-20200806205843488"></p><h2 id="3-公积金"><a href="#3-公积金" class="headerlink" title="3. 公积金"></a>3. 公积金</h2><p>买房用、租房用、离开一个城市可以一次性取出等等。</p><h2 id="4-失业保险"><a href="#4-失业保险" class="headerlink" title="4.  失业保险"></a>4.  失业保险</h2><p>被迫下岗，每个月可以领1800+</p><h2 id="5-生育保险"><a href="#5-生育保险" class="headerlink" title="5. 生育保险"></a>5. 生育保险</h2><p>生育相关的各种费用+产假津贴（津贴为单位平均工资），即休产假时的工资由生育基金支付，单位不支付工资。妻子没有工作，可以享受丈夫的生育保险，但生育相关的费用要少。</p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> Social Security </tag>
             
         </tags>
       
@@ -53,6 +34,25 @@
         <tags>
             
             <tag> Personal Tax </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Social Security Knowledge</title>
+      <link href="2021/02/12/social-security-knowledge/"/>
+      <url>2021/02/12/social-security-knowledge/</url>
+      
+        <content type="html"><![CDATA[<h1 id="社保知识扫盲"><a href="#社保知识扫盲" class="headerlink" title="社保知识扫盲"></a>社保知识扫盲</h1><p>以上海为例：</p><p><img src="social-security-knowledge.assets/image-20200806205104758.png" alt="image-20200806205104758"></p><h2 id="1-养老保险："><a href="#1-养老保险：" class="headerlink" title="1. 养老保险："></a>1. 养老保险：</h2><p>分为个人账户和社会统筹账户，个人账户金额=个人缴纳部分，累计计算利息。退休后，用其个人账户全部储存额除以计发月数（50岁为195、55岁为170、60岁为139，不再统一是120了）即是该职工退休当月的个人账户养老金。10几年后个人账户的钱花完了，才会花社会统筹账户。（单位缴纳的金额全部计入社会统筹账户）</p><h2 id="2-医疗保险："><a href="#2-医疗保险：" class="headerlink" title="2. 医疗保险："></a>2. 医疗保险：</h2><p>分为个人账户和社会统筹账户，个人账户金额=个人缴纳部分+固定金额（根据年龄划分，如210元/年）。每年4月个人一次性缴纳一年的个人缴纳部分，次年6月进行清算，多退少补。报销细节如下：[<a href="http://ybj.sh.gov.cn/xxcxqbxx/index.html?id=7%5D">http://ybj.sh.gov.cn/xxcxqbxx/index.html?id=7]</a> 。注意个人账户金额可以跨年累计。</p><p><img src="social-security-knowledge.assets/image-20200806205843488.png" alt="image-20200806205843488"></p><h2 id="3-公积金"><a href="#3-公积金" class="headerlink" title="3. 公积金"></a>3. 公积金</h2><p>买房用、租房用、离开一个城市可以一次性取出等等。</p><h2 id="4-失业保险"><a href="#4-失业保险" class="headerlink" title="4.  失业保险"></a>4.  失业保险</h2><p>被迫下岗，每个月可以领1800+</p><h2 id="5-生育保险"><a href="#5-生育保险" class="headerlink" title="5. 生育保险"></a>5. 生育保险</h2><p>生育相关的各种费用+产假津贴（津贴为单位平均工资），即休产假时的工资由生育基金支付，单位不支付工资。妻子没有工作，可以享受丈夫的生育保险，但生育相关的费用要少。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Social Security </tag>
             
         </tags>
       
