@@ -8,7 +8,7 @@
       <link href="2021/03/05/matting-results/"/>
       <url>2021/03/05/matting-results/</url>
       
-        <content type="html"><![CDATA[<p>基于少量matting数据集训练的新算法，其在真实数据集上表现出了强大的鲁棒性，以下分别为新算法与开源MODNet算法的结果对比图片，新算法在200余张图片上matting的结果展示视频以及新算法在全身图像上matting结果展示图片，如需更多样例，可以来图测试。</p><p><img src="matting_results.assets/image-20210304151347164.png" alt="image-20210304151347164"></p><center>图1 新算法与开源MODNet结果对比 </center><video id="video" controls="" preload="none">    <source id="mp4" src="matting_results.assets/mask_guided_res_last.mp4" </video><center>图2 新算法matting结果视频展示 </center><p><img src="matting_results.assets/image-20210304154734214.png" alt="image-20210304154734214"></p><center>图3 全身图像测试结果 </center>]]></content>
+        <content type="html"><![CDATA[<h2 id="Matting-工作结果展示"><a href="#Matting-工作结果展示" class="headerlink" title="Matting 工作结果展示"></a>Matting 工作结果展示</h2><p>基于少量matting数据集训练的新算法，其在真实数据集上表现出了强大的鲁棒性，以下分别为新算法与开源MODNet算法的结果对比图片，新算法在200余张图片上matting的结果展示视频以及新算法在全身图像上matting结果展示图片。</p><p><img src="matting_results.assets/image-20210304151347164.png" alt="image-20210304151347164"></p><center>图1 新算法与开源MODNet结果对比 </center><video id="video" controls="" preload="none">    <source id="mp4" src="matting_results.assets/mask_guided_res_last.mp4" width="800px" height="600px"</video><center>图2 新算法matting结果视频展示 </center><p><img src="matting_results.assets/image-20210304154734214.png" alt="image-20210304154734214"></p><center>图3 全身图像测试结果 </center>]]></content>
       
       
       
