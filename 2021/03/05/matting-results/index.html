@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="how to make your hexo, Hexo">
+    <meta name="keywords" content="Matting results, Hexo">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>how to make your hexo | Hexo</title>
+    <title>Matting results | Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -213,12 +213,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">how to make your hexo</h1>
+                    <h1 class="description center-align post-title">Matting results</h1>
                 </div>
             </div>
         </div>
@@ -334,8 +334,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Hello-World/">
-                                <span class="chip bg-color">Hello World !</span>
+                            <a href="/tags/Matting-results/">
+                                <span class="chip bg-color">Matting results</span>
                             </a>
                         
                     </div>
@@ -350,21 +350,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2021-02-12
+                    2021-03-05
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2021-02-14
+                    2021-03-07
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    415
+                    105
                 </div>
                 
 
@@ -391,58 +391,23 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <ol>
-<li><p>创建your_name.github.io 的repo</p>
-</li>
-<li><p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/7dcd97c8e0e3">配置ssh</a></p>
-</li>
-<li><p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/77665a8d56a9">安装Hexo并部署</a></p>
-<ul>
-<li><p>新建blog文件夹并进入，打开Git Bash输入npm install -g hexo-cli安装Hexo</p>
-</li>
-<li><p>hexo init <new_folder> 会新建并初始化一个文件夹；cd  new_folder  &amp;&amp; npm install</p>
-</li>
-<li><p>npm install hexo-deployer-git –save</p>
-</li>
-<li><p>_config.yml添加以下内容：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: <span class="string">&#x27;https://github.com/PokerMan86/pokerman86.github.io.git&#x27;</span></span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></li>
-<li><p><code>hexo clean   &amp;&amp;  hexo g &amp;&amp; hexo d</code></p>
-</li>
-</ul>
-</li>
-<li><p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/f2cce945be5f">更换主题方法</a></p>
-</li>
-<li><p><a href="https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md">主题推荐</a></p>
-<ul>
-<li>安装module时，如果报依赖错误，可以加上–no-audit   <code>npm i hexo-permalink-pinyin --save --no-audit</code></li>
-</ul>
-</li>
-<li><p>撰写博客</p>
-<ul>
-<li><code>hexo n &quot;name&quot;</code> , 生成name.md文件 ,安装markdown格式写就行了</li>
-</ul>
-</li>
-<li><p>博客插入图片：</p>
-<ul>
-<li><p>npm i -s hexo-asset-link   <a target="_blank" rel="noopener" href="https://www.npmjs.com/package/hexo-asset-link">hexo-asset-link - npm (npmjs.com)</a>  img src会指向相对于public的相对路径，也会在html同路径生成图片</p>
-</li>
-<li><p>post_asset_folder: true   新建博客时会自动生成同名文件夹</p>
-</li>
-<li><p>** 保证public中生成的html文件中image的src是指向了html相对路径，并且html同路径生成了同样的图片路径。若没有生成图片路径，则需要自己手动拷贝Make-Your-Own-Hexo.assets文件夹到html同路径。</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;Make-Your-Own-Hexo.assets/ChMkKmAd-R-IGbg9AAmT2xHAEmcAAJfgwPApwUACZPz463.jpg&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-</li>
-<li><p>npm list 查看所有安装的module，npm uninstall module-name 卸载</p>
-</li>
-<li><p>hexo clean会删除public文件夹，如果更新了旧文章，必须clean；添加新文章不用clean</p>
-</li>
-<li><p>注意：博客名称不能有大写字母，解析网址时无法区分大小写。</p>
-</li>
-<li><p>github.io部署后，过一段时间就404打不开了。解决办法：github repo settings中的github pages修改为==Branch: master  / (root) Save</p>
-</li>
-</ol>
-<p>  <img src="how-to-make-your-hexo.assets/ChMkKmAd-R-IGbg9AAmT2xHAEmcAAJfgwPApwUACZPz463.jpg" alt="test image"></p>
+                <h2 id="Matting-结果展示"><a href="#Matting-结果展示" class="headerlink" title="Matting 结果展示"></a>Matting 结果展示</h2><p>基于少量matting数据集训练的新算法，其在真实数据集上表现出了强大的鲁棒性，以下分别为新算法与开源MODNet算法的结果对比图片，新算法在200余张图片上matting的结果展示视频以及新算法在全身图像上matting结果展示图片。</p>
+<p><img src="matting_results.assets/image-20210304151347164.png" alt="image-20210304151347164"></p>
+<center>图1 新算法与开源MODNet结果对比 </center>
 
+
+
+<video id="video" controls="" preload="none">
+    <source id="mp4" src="matting_results.assets/mask_guided_res_last.mp4" width="600px" height="400px"
+</video>
+
+
+<center>图2 新算法matting结果视频展示 </center>
+
+
+
+<p><img src="matting_results.assets/image-20210304154734214.png" alt="image-20210304154734214"></p>
+<center>图3 全身图像测试结果 </center>
                 
             </div>
             <hr/>
@@ -468,7 +433,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/pokerman-yx/pokerman-yx.github.io/tree/master/2021/02/12/how-to-make-your-hexo/">https://github.com/pokerman-yx/pokerman-yx.github.io/tree/master/2021/02/12/how-to-make-your-hexo/</a>
+                    <a href="https://github.com/pokerman-yx/pokerman-yx.github.io/tree/master/2021/03/05/matting-results/">https://github.com/pokerman-yx/pokerman-yx.github.io/tree/master/2021/03/05/matting-results/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -506,8 +471,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Hello-World/">
-                                    <span class="chip bg-color">Hello World !</span>
+                                <a href="/tags/Matting-results/">
+                                    <span class="chip bg-color">Matting results</span>
                                 </a>
                             
                         </div>
@@ -679,9 +644,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
                 <a href="/2021/03/05/matting-results/">
                     <div class="card-image">
@@ -699,9 +665,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-03-05
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-05
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -710,6 +676,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -990,7 +957,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">1.9k</span>&nbsp;字
+                class="white-color">1.5k</span>&nbsp;字
             
             
             
